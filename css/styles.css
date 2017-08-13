@@ -1,0 +1,290 @@
+    /*
+font-family: 'Rock Salt', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+    
+    article,
+    aside,
+    figure,
+    footer,
+    header,
+    menu,
+    nav,
+    section,
+    video,
+    audio {
+        display: block;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    
+    body {
+        line-height: 1;
+        margin: 0 auto;
+        font: 400 100% 'Raleway', sans-serif;
+        /* font: font-style font-variant font-weight font-size/line-height font-family;
+    At minimum, need font-size & font-family*/
+        background: url(../images/joseph-young-41689.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+    
+    #wrapper {
+        background-color: rgba(255, 255, 255, .5);
+        width: 90%;
+        margin: 5% auto 0;
+        padding: 0.5% 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Rock Salt', cursive;
+    }
+    
+    h1 {
+        font-size: 3em;
+        letter-spacing: 1px;
+        line-height: 1;
+        margin: 1% 0 5%;
+        text-align: center;
+        color: black;
+        text-shadow: 0 0 9px #fff;
+    }
+    
+/*
+    h1:after {
+        Small Screen Notification
+        content: "Small";
+        font-size: 0.25em;
+        color: #000;
+    }
+*/
+    
+    #sd {
+        font: 700 1em 'Raleway', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    section h2 {
+        font-size: 1.25em;
+        letter-spacing: 1px;
+        margin: 0 0 0.5em;
+        text-align: center;
+        font-family: 'Rock Salt', cursive;
+        color: black;
+        text-transform: lowercase;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font: 700 1em 'Raleway', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    header {
+        text-align: center;
+        margin: 1% 0;
+    }
+    
+    nav {
+        background-color: darkolivegreen;
+        opacity: .85;
+        color: #eee;
+        font-weight: 700;
+    }
+    
+    nav li {
+        display: block;
+        padding: 3%;
+        border-bottom: 1px solid darkslategray;
+    }
+    
+    nav li:first-child {
+        border-top: 1px solid darkslategray;
+    }
+    
+    nav li:hover {
+        background-color: darkslategray;
+    }
+    
+    article p {
+        padding-bottom: 1em;
+    }
+    
+    article img {
+        margin-bottom: 1em;
+    }
+    
+    .col01,
+    .col02,
+    .col03 {
+        width: 84%;
+        margin: 5%;
+        padding: 0 3%;
+        background-color: #f2f2f2;
+    }
+    
+    footer {
+        background-color: darkslategray;
+        color: #fff;
+        font-size: x-small;
+        text-align: center;
+        margin: 2% auto 0;
+        padding: 1%;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    /*Plan A Trip Page*/
+    
+    .page {
+        width: 84%;
+        margin: 5%;
+        padding: 0 3%;
+        background-color: #f2f2f2;
+    }
+    /*Campgrounds-Small*/
+    
+    .campground figure {
+        display: inline-block;
+        margin: 0 0 5%;
+        padding: 3%;
+        border: 1px solid grey;
+    }
+    
+    .campground figure img {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .campground figure figcaption {
+        text-align: center;
+        margin: 1% 0;
+    }
+    
+    .campground figure figcaption a {
+        color: darkslategray;
+    }
+    
+    .campground figure figcaption a:hover {
+        color: tomato;
+    }
+    /*Media Queries*/
+    
+    @media screen and (min-width:600px) {
+        /*Medium Screen*/
+        h1 {
+            font-size: 2.75em;
+            margin: 1% 0;
+        }
+/*
+        h1:after {
+            Medium Screen Notification
+            content: "Medium";
+            font-size: 0.25em;
+            color: #000;
+        }
+*/
+        nav li {
+            display: inline-block;
+            list-style-type: none;
+            border-bottom: none;
+        }
+        nav li:first-child {
+            border-top: none;
+        }
+        nav li a {
+            padding: 0 0 0 5px;
+            display: inline;
+        }
+        .col01,
+        .col02 {
+            float: left;
+            margin: 3% 0 0 5%;
+            width: 36.5%;
+        }
+        .col03 {
+            float: left;
+        }
+        footer {
+            clear: both;
+        }
+        /*PLAN A TRIP*/
+        .page img {
+            max-width: 50%;
+            float: left;
+            padding: 0 3% 1% 0;
+        }
+        /*CAMPGROUNDS*/
+        .campground figure {
+            width: 94%;
+        }
+        .campground figure img {
+            max-width: 70%;
+            height: auto;
+        }
+    }
+    /*END Medium Screen*/
+    
+    @media screen and (min-width:900px) {
+        /*Large Screen*/
+        h1 {
+            font-size: 4em;
+            margin: 1% 0;
+        }
+/*
+        h1:after {
+            Large Screen Notification content: "Large";
+            font-size: 0.25em;
+            color: #000;
+        }
+*/
+        nav li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 2%;
+        }
+        .col01,
+        .col02,
+        .col03 {
+            float: left;
+            margin: 3% 0 3% 5%;
+            width: 20.6%;
+        }
+        /*PLAN A TRIP*/
+        .page {
+            margin: 3% auto;
+            width: 84%;
+        }
+        /*CAMPGROUNDS*/
+        .campground figure {
+            float: left;
+            padding: 0;
+            width: 47%;
+        }
+        .campground figure:nth-child(even) {
+            margin-right: 5%;
+        }
+        .campground figure img {
+            max-width: 98%;
+            height: auto;
+            padding: 1%;
+        }
+    }
+    /*END Large Screen*/
