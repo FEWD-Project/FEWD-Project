@@ -1,56 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!--meta:vp Emmet Shortcut-->
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Rock+Salt" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Go Camping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WET - Home</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    
+    <!--Social Icon Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
 </head>
-
 <body>
-    <div id="wrapper">
-        <header>
-            <h1><span id="sd">san diego</span> camping</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/plan.html">Plan a Trip</a></li>
-                    <li><a href="pages/campgrounds.html">Campgrounds</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </header>
+   <header>
+        <nav>
+                <a href="index.html"><img src="images/WET_Logo.png" alt="Water Equipment Technology" class="logo"></a>
+                
+            <div class="topnav menuWrapper" id="myTopnav">
+                <a href="index.html" class="active">Home</a> 
+                <a href="pages/about.html" class="navAbout">About</a>                
+                    <div class="dropdown">  
+                        <a href="#" class="dropbtn topnav">Services &#43;</a>
+                              
+                           <div class="dropdown-content">
+                            <a href="pages/services.html">Services</a>
+                            <a href="pages/servicesWater.html">Lakes &amp; Ponds</a>
+                            <a href="pages/servicesIrrigation.html">Irrigation</a>
+                            <a href="pages/servicesAgriculture.html">Filtration Systems</a>
+                            <a href="pages/servicesFogging.html">Fogging &amp; Green Walls</a>
+                            </div> 
+                    </div>           
+                <a href="pages/gallery.html" class="navGallery smallLink">Gallery</a>
+                <a href="pages/testimonials.html" class="navTestimonials smallLink">Testimonials</a>
+                <a href="pages/contact.html" class="navContact smallLink">Contact</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>            
+        </nav>
+        
+        
+                <!------------slideshow------------->       
+                <div class="slideshow-container">
 
-        <section>
+                    <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 4</div>-->
+                    <img src="images/garden4.jpg" style="width:100%" alt="garden">
+                    <div class="text">Soil Moisture Sensing</div>
+                    </div>
 
-            <article class="col01">
-                <h2>plan a trip</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid hic quis praesentium molestias tempora distinctio ipsam nesciunt, eaque consequuntur accusantium rem, quo expedita reprehenderit nostrum sequi adipisci, inventore culpa.</p>
-                <img src="images/ben-duchac-66129-sm.jpg" alt="tent" class="campPhoto">
-            </article>
+                    <div class="mySlides fade">
+                    <!--          <div class="numbertext">2 / 4</div>-->
+                    <img src="images/field2.jpg" style="width:100%" alt="field">
+                    <div class="text">Agriculture Irrigation</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <!--          <div class="numbertext">3 / 4</div>-->
+                    <img src="images/bridge.jpg" style="width:100%" alt="bridge">
+                    <div class="text">Lakes and Ponds</div>
+                    </div>
 
-            <article class="col02">
-                <h2>campgrounds</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid hic quis praesentium molestias tempora distinctio ipsam nesciunt, eaque consequuntur accusantium rem, quo expedita reprehenderit nostrum sequi adipisci, inventore culpa.</p>
-                <img src="images/alex-holt-41510-sm.jpg" alt="smores" class="campPhoto">
-            </article>
+                    <div class="mySlides fade">
+                    <!--          <div class="numbertext">3 / 4</div>-->
+                    <img src="images/irrigation.jpg" style="width:100%" alt="irrigation">
+                    <div class="text">Irrigation Operation Based on Soil Moisture</div>
+                    </div>
 
-            <article class="col03">
-                <h2>more info</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid hic quis praesentium molestias tempora distinctio ipsam nesciunt, eaque consequuntur accusantium rem, quo expedita reprehenderit nostrum sequi adipisci, inventore culpa.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid hic quis praesentium molestias tempora distinctio ipsam nesciunt, eaque consequuntur accusantium rem, quo expedita reprehenderit nostrum sequi adipisci, inventore culpa.</p>
-            </article>
+                    <div class="mySlides fade">
+                    <!--          <div class="numbertext">4 / 4</div>-->
+                    <img src="images/pond.jpg" style="width:100%" alt="pond">
+                    <div class="text">floating island offers a food source for fish</div>
+                    </div>
 
-        </section>
-        <div class="clear"></div>
-    </div>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                </div>
+                <!----------end slideshow code------->
+
+      
+    </header>
+    
+    <section>
+        <article class="colA">
+          <a href="pages/about.html"><img src="images/icons/bulb.png" alt="icon" class="icon bulb"></a>
+            <h1><a href="pages/about.html"> Who are we?</a></h1>
+           <p>Water Equipment Technology is a professional company that offers critical support in harvesting,  storing and efficient application of your water supply. Our business strategy is Sustainable Water Management Solutions</p> 
+        </article>
+        
+        <article class="colB">
+          <a href="pages/services.html"><img src="images/icons/services.png" alt="icon" class="icon"></a>
+            <h1><a href="pages/services.html">Our Services</a></h1>
+              <ul> 
+               <li>Lake and Pond Management</li>
+               <li>Storm water Harvesting</li>
+               <li>Design and Consultancy</li>
+               <li>Audits and Assessments</li>
+               <li>Aeration and Floating Islands</li>
+               <li>Turf Irrigation &amp; Pumping Systems</li>
+               </ul>
+        </article>
+        
+        <article class="colC">
+          <a href="pages/contact.html"><img src="images/icons/gardenCart.png" alt="icon" class="icon"></a>
+            <h1><a href="pages/contact.html">What we do</a></h1>
+           <p>Management and construction of recycled water storage bodies, management of the eco-balance of lakes and ponds plus the construction and 
+management of wetlands which are vital parts of the expertise of WET</p>
+            
+        </article>
+    </section>
+    
     <footer>
-        &copy; 2017, Camping is in-tents.
+      <address>
+          <p>  
+            1967 Anzac Avenue (PO Box 543)<br />
+            Mango Hill Qld 4509<br />
+            Australia
+        </p>
+        <p>  
+            Tel: +(61) 07 32042003<br />
+            Fax: +(61) 07 32931143
+        </p><br />
+      </address>
+           <ul id="footerMenu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="pages/about.html">About</a></li>
+               <li><a href="pages/gallery.html">Gallery</a></li>
+               <li><a href="pages/testimonials.html">Testimonials</a></li>
+               <li><a href="pages/contact.html">Contact</a></li>
+               <li><a href="pages/services.html">Services</a></li>
+           </ul>
+           <ul class="socialIcons">
+               <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+                <li><a href="#" class="fa fa-rss"></a></li>
+           </ul>
+           
+           <div class="map-responsive">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.727909512898!2d153.03458961555495!3d-27.227691182992938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93e53f8cc79995%3A0x918445ebabffe11!2s1967+Anzac+Ave%2C+Mango+Hill+QLD+4509%2C+Australia!5e0!3m2!1sen!2sus!4v1501707994552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>   
+               </iframe>
+           </div>
+           <p class="copyright"> &copy; 2017 - <span class="special">Water Equipment Technology</span></p> 
     </footer>
-
+    
+    
+ 
+<!------------Start Top navigation for mobile------>
+  <script src="js/mobileNav.js"></script>   
+<!-----End top navigation for mobile--------------->
+ 
+  
+<!--------------Start Slideshow script------------->
+  <script src="js/slideshow.js"></script>
+<!-------------End slideshow script--------->
+   
 </body>
-
 </html>

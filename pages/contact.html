@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WET - Contact</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css_contact.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+     
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+     
+    <!--Social Icon Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   <header>
+        <nav>
+                <a href="../index.html"><img src="../images/WET_Logo.png" alt="Water Equipment Technology" class="logo"></a>
+                
+
+            <div class="topnav menuWrapper" id="myTopnav">
+
+                <a href="../index.html" class="navHome">Home</a> 
+                <a href="about.html" class="navAbout">About</a>
+                 
+                <div class="dropdown">  
+                    <a href="#" class="dropbtn topnav">Services &#43;</a>
+                              
+                    <div class="dropdown-content">
+                            <a href="services.html">Services</a>
+                            <a href="servicesWater.html">Lakes &amp; Ponds</a>
+                            <a href="servicesIrrigation.html">Turf Irrigation</a>
+                            <a href="servicesAgriculture.html">Pumping &amp; Filtration Systems</a>
+                            <a href="servicesFogging.html">Fogging &amp; Green Walls</a>
+                    </div>  
+                </div>           
+                    <a href="gallery.html" class="navGallery smallLink">Gallery</a>
+                    <a href="testimonials.html" class="navTestimonials smallLink">Testimonials</a>
+                    <a href="contact.html" class="active smallLink">Contact</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+            </div>
+            <img src="../images/landscape.jpg" alt="landscape" class="headerImg">
+            
+        </nav>
+    </header>
+<!--    End of header ---------------------------------------------------------------------->
+   
+    <section>
+        <article class="contact_colA">
+          <form action="#" method="post" id="regForm">
+          
+           <fieldset>
+               <legend>Contact info</legend>
+              
+                   <ul class="formInput">
+                   <li>
+                       <label for="firstName">First Name:</label>
+                       <input type="text" id="firstName" placeholder="First Name" required autofocus />
+                   </li>
+                   <li>
+                       <label for="lastName">Last Name:</label>
+                       <input type="text" id="lastName" placeholder="Last Name" required />
+                   </li>
+                   <li>
+                       <label for="email">Email:</label>
+                       <input type="email" id="email" required placeholder="Email: name@url.com" />
+                   </li>
+                   <li>
+                       <label for="phone">Phone:</label>
+                       <input type="tel" id="phone" placeholder="Phone" />
+                   </li>
+                   </ul>
+            
+           </fieldset>
+           
+           <fieldset>
+               <legend>Additional Information</legend>
+               <ul>
+                   <li>
+                       <label for="country">Country:</label>
+                       <select name="country" id="country">
+                           <option value="australia" selected >Australia</option>
+                           <option value="canada">Canada</option>
+                           <option value="usa">USA</option>
+                           <option value="other">Other..</option>
+                       </select>
+                   </li>
+                   <li><label for="hearAbout">How did you hear about us?</label>
+                       <ul class="radioList">
+                           <li>
+                               <input type="radio" name="media" value="newspaper" id="newspaper" checked />Newspaper
+                           </li>
+                           <li>
+                               <input type="radio" name="media" value="website" id="website" />Website
+                           </li>
+                           <li>
+                               <input type="radio" name="media" value="socialMedia" id="socialMedia" />Social Media
+                           </li>
+                           <li>
+                               <input type="radio" name="media" value="other" id="other" />Other
+                           </li>
+                       </ul>
+                    </li>
+                   <li>
+                       <label for="sercices">Services you are interested in:</label>
+                        <ul class="radioList checkboxList">
+                           <li>
+                               <input type="checkbox" value="waterFeatures"  name="services">Water Features
+                           </li>
+                           <li>
+                               <input type="checkbox" value="Irrigation" name="services" />Irrigation
+                           </li>
+                           <li>
+                               <input type="checkbox" value="Agriculture" name="services" />Agriculture
+                           </li>
+                           <li>
+                              <input type="checkbox" value="foggingGreenWalls"  name="services" />Fogging &amp; Green Walls
+                           </li>
+                       </ul>
+                   </li>
+                   <li>
+                       <label for="message">Questions/Comments</label>
+                       <textarea name="message" id="message" placeholder="Please write your message here"></textarea>
+                   </li>
+                   
+                   <li>
+                       <label for="newsletter">Receive our monthly newsletter</label>
+                       <ul class="radioList sideBySide">
+                           <li>
+                               <input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked />Yes
+                           </li>
+                           <li>
+                               <input type="radio" id="newsletter-no" name="newsletter" value="no">No 
+                           </li>
+                       </ul>
+                   </li>
+               </ul>
+           </fieldset>
+           
+        <ul class="sideBySide, marginBtm">
+            <li>
+                <input type="reset" id="reset" class="button">
+            </li>
+            <li>
+                <input type="submit" id="submit" class="button" value="Submit">
+            </li>
+        </ul>
+           
+       </form>           
+        </article>
+        
+        <article class="contact_colB">
+          <img src="../images/icons/email.png" alt="icon" class="iconEmail">
+           <h1>Contact</h1>
+
+           <div class="contactInfo">
+               <p><span>Ben Chapman</span><br />
+               Director/Senior Consultant<br />
+               <a href="ben@waterequipment.com.au?Subject=CustomerInquery" class="email">ben@waterequipment.com.au</a>
+               </p>
+               <p><span>Niel Surman</span><br />
+               Senior Consultant<br />
+               <a href="neil@waterequipment.com.au?Subject=CustomerInquery" class="email">neil@waterequipment.com.au</a>
+               </p>
+               <p><span>Michael Barker</span><br />
+               Senior Consultant<br />
+               <a href="michael@waterequipment.com.au?Subject=CustomerInquery" class="email">michael@waterequipment.com.au</a>
+               </p>
+               <p><span>Renee Chapman</span><br />
+               BSc (hons) Ecoligist<br />
+               <a href="renee@waterequipment.com.au?Subject=CustomerInquery" class="email">renee@waterequipment.com.au</a>
+               </p><br />
+               
+               <p>Tel: +(61) 07 32042003<br />
+               Fax: +(61) 07 32931143</p>
+               
+               <div id="brochureLink">
+               <a href="http://www.waterequipment.com.au/Web%20Photos/WET%20-%20Company%20Brochure.pdf" target="_blank"><img src="../images/pdf.png" alt="pdf icon" class="pdfIcon"> Company's Projects &amp; Designs Brochure</a>
+               </div>
+           </div>
+        <!-------Table for images ------------->  
+        <div id="contactImg">
+           <div id="row1">
+               <p class="one"><img src="../images/brisbane.jpg" alt="green House"></p>
+               <p class="two"><img src="../images/gardens.jpg" alt="gardens"></p>
+            </div>
+           <div id="row2">
+               <p class="one"><img src="../images/greenWall.jpg" alt="green wall"></p>
+               <p class="two"><img src="../images/garden3.jpg" alt="gardens"></p>
+           </div>
+           <div id="row3">
+               <p class="one"><img src="../images/pipes.jpg" alt="pipes"></p>
+               <p class="two"><img src="../images/filtration.jpg" alt="filtration system"></p>
+           </div>
+           
+        </div>
+         <!-------End table-------------------->  
+            
+        </article>
+    </section>
+    
+<footer>
+      <address>
+          <p>  
+            1967 Anzac Avenue (PO Box 543)<br />
+            Mango Hill Qld 4509<br />
+            Australia
+        </p>
+        <p>  
+            Tel: +(61) 07 32042003<br />
+            Fax: +(61) 07 32931143
+        </p><br />
+      </address>
+           <ul id="footerMenu">
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="testimonials.html">Testimonials</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="services.html">Services</a></li>
+           </ul>
+           <ul class="socialIcons">
+               <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+                <li><a href="#" class="fa fa-rss"></a></li>
+           </ul>
+           
+           <div class="map-responsive">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.727909512898!2d153.03458961555495!3d-27.227691182992938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93e53f8cc79995%3A0x918445ebabffe11!2s1967+Anzac+Ave%2C+Mango+Hill+QLD+4509%2C+Australia!5e0!3m2!1sen!2sus!4v1501707994552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>   
+               </iframe>
+           </div>
+           <p class="copyright"> &copy; 2017 - <span class="special">Water Equipment Technology</span></p> 
+    </footer>
+    
+<!------------Start Top navigation for mobile------>
+  <script src="../js/mobileNav.js"></script>   
+<!-----End top navigation for mobile--------------->
+   
+</body>
+</html>
